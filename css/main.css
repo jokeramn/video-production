@@ -1,10 +1,11 @@
 @import url('./layout/normilize.css');
 @import url('./layout/reset.css');
 @import url('./layout/base.css');
+@import url('./layout/main-page-wrapper.css');
 @import url('./blocks/header.css');
 @import url('./blocks/menu.css');
 @import url('./blocks/contacts.css');
-@import url('./blocks/main.css');
+@import url('./blocks/main__content.css');
 @import url('./blocks/preview.css');
 @import url('./blocks/button.css');
 @import url('./blocks/description.css');

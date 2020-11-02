@@ -21,10 +21,6 @@ body {
   min-width: 1200px;
 }
 
-.main-page-wrapper {
-  background:url(/img/bg/hero.png) center top no-repeat, url(/img/bg/bottom-pic.png) center bottom 306px no-repeat;
-}
-
 .wrapper__content {
   flex: 1;
 }
@@ -32,8 +28,4 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-}
-
-ul {
-  list-style: none;
 }
