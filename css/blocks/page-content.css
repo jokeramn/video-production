@@ -49,10 +49,11 @@
 
 .partners {
   background:#F4F5F5;
-  padding: 88px 0 110px;
+  padding: 79px 0 103px;
 }
 
 .partners__title {
+  padding-top: 10px;
   font-weight: bold;
   font-size: 48px;
   color: #1A1B1E;
@@ -64,10 +65,18 @@
   flex-wrap: wrap;
 }
 
+.partners__item {
+  margin-left: 46px;
+}
+
+.partners__item:nth-child(4n+1) {
+  margin-left: 0;
+}
+
 .partners__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 250px;
   height: 100px;
 }
