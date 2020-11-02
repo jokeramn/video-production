@@ -16,7 +16,7 @@
 }
 
 .socials__item--tg .socials_link {
-  background-image:url(../../img/icons/telegram.png);
+  background-image:url(/img/icons/telegram.png);
 }
 
 .socials__item--tg .socials_link:hover {
