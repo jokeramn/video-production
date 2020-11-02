@@ -1,0 +1,23 @@
+.preview {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+.preview__title {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.preview__desc {
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.preview__button {
+  margin-top: 39px;
+  display: flex;
+  justify-content: center;
+}
