@@ -1,16 +1,21 @@
 .page-content {
+  padding-top: 94px;
   background: #ffffff;
   color: #303030;
   ;
 }
 
 .film {
-  padding: 40px 0 81px;
+  padding: 0 0 81px;
 }
 
 .film__item {
   display: flex;
-  padding: 50px 0 5px;
+  padding: 0 0 5px;
+}
+
+.film__item--padding {
+  padding-top: 47px;
 }
 
 .film__img {
@@ -43,8 +48,12 @@
   padding-top: 10px;
 }
 
-.paginator__link--balck{
+.paginator__link--black{
   color:#000000;
+}
+
+.paginator__link--black:hover {
+  color:#ffffff;
 }
 
 .partners {

@@ -18,5 +18,8 @@
 /* page services */
 
 @import url('./blocks/top-line.css');
-@import url('./blocks/page-content.css')
+@import url('./blocks/page-content.css');
 
+/* page greeting */
+
+@import url('./layout/wrapper-page-greeting.css')
