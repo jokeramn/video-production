@@ -1,3 +1,23 @@
 .wrapper-page-greeting {
-  background: url('../../img/bg/bg.png') center center;
+  background: url('../../img/bg/bg.png') center center / cover no-repeat;
+}
+
+.camera {
+  background-image: url('../../img/greeting/rec.png');
+  height: 643px;
+  width: 1128px;
+  background-repeat: no-repeat;
+  margin-top: 158px;
+}
+
+.enter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.enter-button {
+  margin-top: 38px ;
 }
