@@ -1,7 +1,9 @@
 .contacts {
   padding: 4px 0 0 0;
-  text-align: right;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .contacts__number {
@@ -10,10 +12,56 @@
   color: white;
 }
 
-.contacts__graph {
+.dropdown__graph {
+  display: block;
   font-size: 13px;
-  margin-top: -7px;
   text-decoration-line: underline;
   color: #FF3D00;
-  ; 
+  padding-bottom: 7px;
+  margin-top: -7px;
+  cursor: pointer;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown__text {
+  left: -63px;
+  opacity: 1;
+}
+
+.dropdown__text {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 13px 18px 15px;
+  background: #FFFFFF;
+  color:#1E1F20;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: left;
+  line-height: 1.55;
+  min-width: 122px;
+  left: 99999px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.dropdown__text--bold {
+  font-weight: bold;
+}
+
+.dropdown__text:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom-color: #fff;
+  border-top-width: 0;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  transform: translateY(-50%);
+}
+

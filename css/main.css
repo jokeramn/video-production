@@ -22,4 +22,10 @@
 
 /* page greeting */
 
-@import url('./layout/wrapper-page-greeting.css')
+@import url('./layout/wrapper-page-greeting.css');
+
+/* page feedbacks */
+
+@import url('./blocks/feedbacks.css');
+@import url('./blocks/separator.css');
+@import url('./blocks/inner-section.css')

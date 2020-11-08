@@ -1,23 +1,52 @@
-.wrapper-page-greeting {
-  background: url('../../img/bg/bg.png') center center / cover no-repeat;
+.wrapper.wrapper-page-greeting {
+  background: url('../../img/bg/bg.png') center / cover no-repeat;
+
 }
 
 .camera {
-  background-image: url('../../img/greeting/rec.png');
-  height: 643px;
-  width: 1128px;
-  background-repeat: no-repeat;
-  margin-top: 158px;
+  padding-top: 158px;
 }
 
-.enter {
+.camera__record {
+  background: url('../../img/greeting/rec.png') center center no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 648px;
+}
+
+.camera__enter {
+  padding-top: 33px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  min-height: 240px;
+  animation: fly 1.5s cubic-bezier(.19,1.09,.68,1.44);
+  transform-origin: center bottom;
+
 }
 
+@keyframes fly {
+  0% {
+    transform: scale(0);
+  }
 
-.enter-button {
-  margin-top: 38px ;
+  10% {
+    transform:scale(0) rotate(60deg);
+  }
+
+   60% {
+    transform: scale(1) rotate(-7deg);
+  } 
+
+  75% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg); 
+  }
+
 }
+

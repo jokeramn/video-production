@@ -1,0 +1,98 @@
+.feedbacks {
+  padding-bottom: 87px;
+}
+
+.feedbacks__list {
+  column-count: 2;
+  column-gap: 27px;
+  padding-bottom: 17px;
+}
+
+.feedbacks__item {
+  margin-bottom: 17px;
+}
+
+.feedbacks__item:last-child {
+  margin-bottom: 0;
+}
+
+.feedback {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 50px 30px 35px;
+  background: #F4F5F5;
+  border-radius: 5px;
+}
+
+.feedback__header {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.avatar {
+  width: 142px;
+  height: 142px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.feedback__userdata {
+  margin-left: 22px;
+  padding-top: 36px;
+}
+
+.feedback__user{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #1A1B1E;
+  text-decoration: none;
+  margin-bottom: 7px;
+}
+
+.feedback__user:hover {
+  color: #2E77A4;
+  text-decoration: underline;
+  transition: .3s;
+}
+
+.feedback__user::after {
+  content: url(../../img/feedbacks/vk-blue\ 1.png);
+  height: 30px;
+  padding-left: 7px;
+}
+
+.feedback__tags {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tag {
+  font-size: 13px;
+  padding: 10px 25px;
+  border-radius: 35px;
+  background: #E7E7E7;
+}
+
+.feedback__tag-item--active {
+  background: #F2D4C9;
+}
+
+.feedback__subtitle {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 13px;
+}
+
+.feedback__text {
+  color:#818181;
+  margin-bottom: 49px;
+  line-height: 1.7;
+}
+
+.feedback__time {
+  color: #1A1B1E;
+  font-size: 14px;
+  font-weight: 600;
+}

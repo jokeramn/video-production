@@ -28,4 +28,5 @@
 
 .paginator__link:hover {
   background-color: #FF5500;
+  transition: .6s;
 }

@@ -8,41 +8,87 @@
   justify-content: space-between;
 }
 
-.socials_link {
-  display: block;
-  text-decoration: none;
+
+
+.socials__item {
   width: 36px;
   height: 36px;
+  border-radius: 50%;
+  position: relative;
 }
 
-.socials__item--tg .socials_link {
-  background-image:url(../../img/icons/telegram.png);
+.socials__link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  transition: 1s;
 }
 
-.socials__item--tg .socials_link:hover {
-  background-image:url(../../img/icons/t2.png);
+.socials__link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  transition: 1s;
 }
 
-.socials__item--vk .socials_link {
-  background-image:url(../../img/icons/vk.png);
+.socials__link.socials__link--tg::after {
+  background: url('../../img/icons/css_sprites.png');
+  background-position:-122px -66px;
 }
 
-.socials__item--vk .socials_link:hover {
-  background-image:url(../../img/icons/vk2.png);
+.socials__link.socials__link--tg::before {
+    background: url('../../img/icons/css_sprites.png');
+    background-position: -122px -10px ;
 }
 
-.socials__item--face .socials_link {
-  background-image:url(../../img/icons/f.png);
+.socials__link--vk.socials__link::after {
+  background: url('../../img/icons/css_sprites.png');
+  background-position:-66px -122px;;
 }
 
-.socials__item--face .socials_link:hover {
-  background-image:url(../../img/icons/f2.png);
+.socials__link--vk.socials__link::before {
+    background: url('../../img/icons/css_sprites.png');
+    background-position: -10px -122px ;
 }
 
-.socials__item--inst .socials_link {
-  background-image:url(../../img/icons//in.png);
+.socials__link--face.socials__link::after {
+  background: url('../../img/icons/css_sprites.png');
+  background-position:-10px -10px;
 }
 
-.socials__item--inst .socials_link:hover {
-  background-image:url(../../img/icons/in2.png);
+.socials__link--face.socials__link::before {
+  content: '';
+    background: url('../../img/icons/css_sprites.png');
+    background-position: -66px -10px;
 }
+
+.socials__link--inst.socials__link::after {
+  background: url('../../img/icons/css_sprites.png');
+  background-position:-10px -66px;
+}
+
+.socials__link--inst.socials__link::before {
+    background: url('../../img/icons/css_sprites.png');
+    background-position: -66px -66px;
+}
+
+.socials__link:hover::before {
+  opacity: 1;
+}
+
+.socials__link:hover::after {
+  opacity: 0;
+}
+
+
