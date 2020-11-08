@@ -36,7 +36,7 @@
 
 .form__input:focus {
   outline: none;
-  border: #CCC solid 1px;
+  border-color: #ccc;
 }
 
 .form__input::placeholder {
@@ -65,6 +65,7 @@
   flex: 1;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -13px -10px 0;
 }
 
 .controls__item {
@@ -90,6 +91,7 @@
 .form__buttons {
   display: flex;
   justify-content: flex-end;
+  padding-top: 9px;
 }
 
 .form__button {
@@ -107,6 +109,10 @@
 
 .button.button--grey:hover {
   background: #2B2B2B;
+}
+
+.button.button--grey:active {
+  border:none
 }
 
 .button.button--orange {
